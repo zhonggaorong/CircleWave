@@ -9,4 +9,4 @@ CGFloat m21（x切变）, m22（y缩放）, m23（）, m24（）;
 CGFloat m31（旋转）, m32（）, m33（）, m34（透视效果，要操作的这个对象要有旋转的角度，否则没有效果。正直/负值都有意义）;
 CGFloat m41（x平移）, m42（y平移）, m43（z平移）, m44（）;
 }; 
- ![image]https://github.com/zhonggaorong/CircleWave/2.gif
+ ![image](https://github.com/zhonggaorong/CircleWave/2.gif)
