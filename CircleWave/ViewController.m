@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CircleWaveView.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CGRect rect = [UIScreen mainScreen].bounds;
+
+    //加上最底层的波纹效果
+    CircleWaveView * waveView = [[CircleWaveView alloc] initWithFrame:CGRectMake(0, 0, rect.size.width/2, rect.size.width/2)];
+    waveView.circleCount = 4;
+    waveView.circleR = 30;
+    waveView.colors = [NSArray arrayWithObjects:[UIColor greenColor], nil];
+    waveView.maxScale = 6;
+    waveView.isFilled = YES;
+    waveView.center = self.view.center;
+    [self.view addSubview:waveView];
+    
+    [waveView startToWaveAnimation];
+    
 }
 
 - (void)didReceiveMemoryWarning {

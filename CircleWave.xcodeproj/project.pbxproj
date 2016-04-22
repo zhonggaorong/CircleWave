@@ -15,6 +15,9 @@
 		9DB4FCA61CC9C45000F1EFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4FCA41CC9C45000F1EFC8 /* LaunchScreen.storyboard */; };
 		9DB4FCB11CC9C45000F1EFC8 /* CircleWaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4FCB01CC9C45000F1EFC8 /* CircleWaveTests.m */; };
 		9DB4FCBC1CC9C45000F1EFC8 /* CircleWaveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4FCBB1CC9C45000F1EFC8 /* CircleWaveUITests.m */; };
+		9DB4FCD31CC9C48B00F1EFC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4FCD21CC9C48B00F1EFC8 /* CoreGraphics.framework */; };
+		9DB4FCD51CC9C49400F1EFC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4FCD41CC9C49400F1EFC8 /* QuartzCore.framework */; };
+		9DB4FCD81CC9C5B300F1EFC8 /* CircleWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4FCD71CC9C5B300F1EFC8 /* CircleWaveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		9DB4FCB71CC9C45000F1EFC8 /* CircleWaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleWaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB4FCBB1CC9C45000F1EFC8 /* CircleWaveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleWaveUITests.m; sourceTree = "<group>"; };
 		9DB4FCBD1CC9C45000F1EFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB4FCD21CC9C48B00F1EFC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9DB4FCD41CC9C49400F1EFC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9DB4FCD61CC9C5B300F1EFC8 /* CircleWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleWaveView.h; path = WaveAndArroundCircle/CircleWaveView.h; sourceTree = "<group>"; };
+		9DB4FCD71CC9C5B300F1EFC8 /* CircleWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleWaveView.m; path = WaveAndArroundCircle/CircleWaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB4FCD51CC9C49400F1EFC8 /* QuartzCore.framework in Frameworks */,
+				9DB4FCD31CC9C48B00F1EFC8 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 		9DB4FC8A1CC9C45000F1EFC8 = {
 			isa = PBXGroup;
 			children = (
+				9DB4FCD41CC9C49400F1EFC8 /* QuartzCore.framework */,
+				9DB4FCD21CC9C48B00F1EFC8 /* CoreGraphics.framework */,
 				9DB4FC951CC9C45000F1EFC8 /* CircleWave */,
 				9DB4FCAF1CC9C45000F1EFC8 /* CircleWaveTests */,
 				9DB4FCBA1CC9C45000F1EFC8 /* CircleWaveUITests */,
@@ -101,6 +112,8 @@
 		9DB4FC951CC9C45000F1EFC8 /* CircleWave */ = {
 			isa = PBXGroup;
 			children = (
+				9DB4FCD61CC9C5B300F1EFC8 /* CircleWaveView.h */,
+				9DB4FCD71CC9C5B300F1EFC8 /* CircleWaveView.m */,
 				9DB4FC991CC9C45000F1EFC8 /* AppDelegate.h */,
 				9DB4FC9A1CC9C45000F1EFC8 /* AppDelegate.m */,
 				9DB4FC9C1CC9C45000F1EFC8 /* ViewController.h */,
@@ -272,6 +285,7 @@
 			files = (
 				9DB4FC9E1CC9C45000F1EFC8 /* ViewController.m in Sources */,
 				9DB4FC9B1CC9C45000F1EFC8 /* AppDelegate.m in Sources */,
+				9DB4FCD81CC9C5B300F1EFC8 /* CircleWaveView.m in Sources */,
 				9DB4FC981CC9C45000F1EFC8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
